@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Résumé Court</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header-buttons">
+    <button onclick="window.location.href='resumebot.html'">RésuméBot</button>
+    <button onclick="window.location.href='welcome.html'">Logout</button>
+  </div>
+  <div class="container">
+    <h1>The Résumé Court</h1>
+
+    <form id="resumeForm">
+      <label for="photo">Upload Profile Photo</label>
+      <input type="file" id="photo" name="photo" accept="image/*" />
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="text" name="phone" placeholder="Phone Number" required />
+      <input type="text" name="linkedin" placeholder="LinkedIn ID" />
+      <textarea name="objective" placeholder="Objective"></textarea>
+      <textarea name="education" placeholder="Education" required></textarea>
+      <textarea name="skills" placeholder="Skills" id="skillsInput" required></textarea>
+      <textarea name="experience" placeholder="Experience" required></textarea>
+      <textarea name="projects" placeholder="Projects" required></textarea>
+
+      <!-- 🆕 Template Selector -->
+      <label for="template">Select Template</label>
+      <select name="template" id="template">
+        <option value="template1">Formal Classic</option>
+        <option value="template2">Modern Clean</option>
+        <option value="template3">Professional Purple</option>
+      </select>
+
+      <button type="submit">Generate Resume</button>
+    </form>
+
+    <div id="output" style="display: none;">
+      <h2>Resume Preview</h2>
+      <div id="resumeContent" class="resume-white-bg" style="background-color: white;"></div>
+      <button id="downloadBtn">Download PDF</button>
+      <button id="wordBtn">Export to Word</button>
+    </div>
+
+    <div id="suggestions" class="suggestions"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docx@7.7.0/build/index.min.js"></script>
+  <script>
+    window.jsPDF = window.jspdf.jsPDF;
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,319 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(45deg, #d7b6f0, #a29bf3); /* Light purple gradient */
+  color: #2e2e2e; /* Dark purple for text */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background-color: #ffffff; /* White container for contrast */
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-sizing: border-box;
+  border: 1px solid #b3a0d6; /* Soft purple border */
+}
+
+h1 {
+  text-align: center;
+  color: #6a4bdf; /* Soft bright purple */
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+form label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #6a4bdf; /* Purple label color */
+  margin-top: 10px;
+  display: block;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #b3a0d6; /* Soft purple border */
+  border-radius: 8px;
+  background-color: #f0e6f6; /* Light purple input boxes */
+  color: #2e2e2e; /* Dark purple text */
+  font-size: 16px;
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+  border-color: #6a4bdf; /* Focus with purple */
+  outline: none;
+  box-shadow: 0 0 5px rgba(106, 75, 223, 0.7); /* Purple glow on focus */
+}
+
+form button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background-color: #6a4bdf; /* Bright purple button */
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+form button:hover {
+  background-color: #5a3db6; /* Slightly darker purple on hover */
+}
+
+#resumeContent img {
+  max-width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+#resumeContent {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#output {
+  margin-top: 20px;
+}
+
+#downloadBtn, #wordBtn {
+  display: none;
+  padding: 12px 25px;
+  border: none;
+  background-color: #6a4bdf;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+#downloadBtn:hover, #wordBtn:hover {
+  background-color: #5a3db6;
+}
+
+/* Auto-suggestion styles */
+#suggestions {
+  position: absolute;
+  background-color: #f0e6f6;
+  border: 1px solid #b3a0d6;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;  /* Hide by default */
+  z-index: 999;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.suggestion-option {
+  padding: 10px;
+  color: #6a4bdf;
+  cursor: pointer;
+}
+
+.suggestion-option:hover {
+  background-color: #e2d3f7;
+}
+
+/* Style for skills input field */
+#skillsInput {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #b3a0d6;
+  border-radius: 8px;
+  background-color: #f0e6f6;
+  color: #2e2e2e;
+  font-size: 16px;
+}
+
+#skillsInput:focus {
+  border-color: #6a4bdf;
+  outline: none;
+  box-shadow: 0 0 5px rgba(106, 75, 223, 0.7); /* Purple glow effect */
+}
+
+
+/* Template 1 - Formal Classic */
+.template1 {
+  font-family: 'Times New Roman', serif;
+  border: 2px solid #333;
+  padding: 30px;
+  line-height: 1.8;
+  color: #111;
+}
+
+.template1 h2 {
+  border-bottom: 1px solid #444;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+/* Template 2 - Modern Clean */
+.template2 {
+  font-family: 'Outfit', sans-serif;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-left: 5px solid #6a4bdf;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  color: #333;
+}
+
+.template2 h2 {
+  color: #6a4bdf;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #e0d7f7;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+
+/* ✅ Base container */
+.resume-box {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  color: #2e2e2e;
+  font-family: 'Outfit', sans-serif;
+  line-height: 1.6;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ✅ Template 3 Styling */
+.template3 {
+  position: relative;
+  padding-top: 160px;
+  background-color: #ffffff;
+}
+
+/* Purple Header Banner */
+.template3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 140px;
+  width: 100%;
+  background-color: #5a3db6;
+  z-index: 0;
+  border-bottom: 4px solid #c8b6ff;
+}
+
+/* Name */
+.template3 h1 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 26px;
+  color: #ffffff;
+  margin: 0;
+  z-index: 2;
+}
+
+/* Contact Info */
+.template3 .contact-info {
+  position: absolute;
+  top: 65px;
+  left: 30px;
+  color: #e0dcff;
+  font-size: 14px;
+  z-index: 2;
+  line-height: 1.4;
+}
+
+/* Profile Picture */
+.template3 img.resume-photo {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 2;
+  border: 4px solid #ffffff;
+  background-color: #ffffff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+/* Section Titles */
+.template3 h2 {
+  color: #5a3db6;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+/* Paragraphs */
+.template3 p {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+/* Tags or Skills */
+.template3 .tag {
+  display: inline-block;
+  background-color: #ebe4ff;
+  color: #5a3db6;
+  padding: 6px 10px;
+  margin: 5px 5px 0 0;
+  font-size: 13px;
+  border-radius: 20px;
+}
+
+/* Add styles for the new buttons */
+.header-buttons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.header-buttons button {
+  background-color: #6a4bdf; /* Match your website's color scheme */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.header-buttons button:hover {
+  background-color: #6a4bdf; /* Darker shade when hovered */
+}
+
+

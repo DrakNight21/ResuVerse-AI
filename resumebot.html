@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ResumeBot - The Résumé Court</title>
+  <link rel="stylesheet" href="resumebot.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+  <!-- Return to Home Button -->
+  <button class="home-button" onclick="window.location.href='index.html'">← Return to Resume Builder</button>
+
+  <!-- Chatbot Container -->
+  <div class="chat-container">
+    <div id="chat-box" class="chat-box">
+      <div class="bot-message">👋 Hello! I'm RésuméBot. Ask me anything about resumes, skills, or job opportunities!</div>
+    </div>
+    <form id="chat-form" class="chat-form">
+      <input type="text" id="user-input" placeholder="Type your message..." required autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="resumebot.js"></script>
+</body>
+</html>

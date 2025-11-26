@@ -1,0 +1,105 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #0b0b0f; /* deep black for AMOLED */
+  color: #f1f1f1;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Particle Background */
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Welcome Container */
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.06); /* subtle glass effect */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 50px 40px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 25px rgba(144, 104, 255, 0.2);
+  max-width: 650px;
+  z-index: 2;
+}
+
+/* Title */
+h1 {
+  color: #b488f1; /* soft purple */
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Description */
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #dcdcdc;
+  margin-bottom: 35px;
+}
+
+/* Button */
+button {
+  padding: 14px 28px;
+  background-color: #a970ff;
+  color: #fff;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(169, 112, 255, 0.3);
+}
+
+button:hover {
+  background-color: #8a5de2;
+  box-shadow: 0 6px 16px rgba(138, 93, 226, 0.5);
+}
+
+/* Click Ripple Effect */
+body.clicked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: #a970ff;
+  border-radius: 50%;
+  animation: disperse 0.5s ease-out;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes disperse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
