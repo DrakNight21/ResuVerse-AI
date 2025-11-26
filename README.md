@@ -1,71 +1,58 @@
-🧠 ResuVerse AI – AI-Powered Resume Builder
+# 🧠 ResuVerse AI – AI-Powered Resume Builder  
 
-Welcome to ResuVerse AI, an intelligent resume-building platform developed as part of the AI Essentials course for BTech CSE students at Lovely Professional University (LPU).
-ResuVerse AI helps users create polished, job-ready resumes using AI-driven suggestions and modern templates.
+Welcome to **ResuVerse AI**, an AI-powered resume builder developed as part of the AI Essentials course for BTech CSE students at Lovely Professional University (LPU). This project helps users create professional, job-ready resumes with AI assistance and modern templates.
 
-🚀 Features
+---
 
-📤 Upload a profile photo
+## � Features  
+- 📤 Upload a profile photo  
+- 🎨 Choose from 3 professional templates  
+- ✨ Get smart suggestions for skills and resume sections  
+- 📄 Export your resume as **PDF** or **Word (.docx)**  
+- 👁️ Live resume preview  
+- 🔐 Simple Logout functionality  
+- 💡 Clean, responsive, and user-friendly interface  
 
-🎨 Choose from 3 premium resume templates
+---
 
-🤖 AI-powered suggestions for skills and resume sections
+## 🛠️ Technologies Used  
+**Frontend:**  
+- HTML5, CSS3, JavaScript  
 
-📄 Export your resume as PDF or Word (.docx)
+**Backend:**  
+- PHP  
 
-👁️ Live resume preview while editing
+**Libraries:**  
+- `html2canvas` – for PDF generation  
+- `jsPDF` – to create downloadable PDFs  
+- `docx.js` – for Word document export  
 
-🔐 Simple logout functionality
+---
 
-💡 Clean, responsive, and user-friendly UI
+## 🖼️ Resume Templates  
+1. **Formal Classic** – Timeless and clean layout  
+2. **Modern Clean** – Stylish and minimal design  
+3. **Professional Purple** – Trendy and visually rich with purple accents  
 
-🛠️ Technologies Used
-Frontend
+---
 
-HTML5
+## 📸 Preview  
+*(Add screenshots or GIFs here if available.)*  
 
-CSS3
+---
 
-JavaScript
+## 📚 Educational Purpose  
+This project was developed as part of the **AI Essentials coursework at LPU** and is intended for **educational and demonstration purposes only**.  
 
-Backend
+---
 
-PHP
+## 🙌 Acknowledgements  
+- Special thanks to our **AI Essentials faculty at LPU**.  
+- Inspiration from modern online resume generators.  
 
-Libraries
+---
 
-html2canvas — for PDF layout rendering
-
-jsPDF — to generate downloadable PDF files
-
-docx.js — to export resumes in Word format
-
-🖼️ Resume Templates
-
-Formal Classic – A timeless and highly professional layout
-
-Modern Clean – A sleek, minimalistic design
-
-Professional Purple – A trendy, visually rich template with purple accents
-
-📸 Preview
-
-(Add screenshots or GIFs of your interface here.)
-
-📚 Educational Purpose
-
-ResuVerse AI was created as part of the AI Essentials curriculum at LPU and serves as an educational and demonstration project, showcasing how AI can enhance resume creation.
-
-🙌 Acknowledgements
-
-Heartfelt thanks to the AI Essentials faculty at Lovely Professional University
-
-Inspired by leading modern online resume builders and AI tools
-
-📬 Contact
-
-Feel free to connect:
-
-📧 Email: bhattacharjeesamriddha6@gmail.com
-
-💼 LinkedIn: https://www.linkedin.com/in/samriddha-bhattacharjee/
+## 📬 Contact  
+Feel free to connect:  
+- 📧 **Email:** (mailto:bhattacharjeesamriddha6@gmail.com)  
+- 💼 **LinkedIn:** (https://www.linkedin.com/in/samriddha-bhattacharjee/)  
